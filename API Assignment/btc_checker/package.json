@@ -1,0 +1,16 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "btc_checker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "country-currency-map": "^1.0.9",
+    "request": "^2.88.0",
+    "yargs": "^13.2.2"
+  }
+}

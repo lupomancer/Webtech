@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 4</title>
+</head>
+<body>
+<p></p>
+<script>
+    var i;
+    for (i = 0; i < 5; i++) {
+        alert("JavaScript is mediocre." + "\n");
+    }
+    var light = "green";
+    if (light == "red"){
+        alert("light is red, stop the car");
+        light = "yellow";
+    }
+    else if (light == "yellow"){
+        alert("light is yellow, slow the car");
+        light = "green";
+    }
+    else if (light == "green"){
+        alert("light is green, proceed");
+        light = "red";
+    }
+    function mult(num1, num2) {
+        multNum = num1 * num2;
+        return multNum
+    }
+    alert(mult(3, 4));
+    var students = ["steve", "bob", "kelso"];
+    alert(students[2]);
+</script>
+</body>
+</html>

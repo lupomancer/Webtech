@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>layout 1</title>
+    <meta charset="utf-8">
+    <style>
+
+        .grid-container {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 200px;
+            padding: 10px;
+        }
+        .grid-container > div {
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-column: 1 / 4;
+        }
+        .item2 {
+            grid-row: 2 / 4;
+        }
+        .item3 {
+            grid-row: 2 / 4;
+        }
+        .item4 {
+            grid-row: 2 / 4;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+</div>
+
+</body>
+</html>

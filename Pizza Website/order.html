@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <script src="resources/script.js"></script>
+</head>
+<body>
+<div class="dropdown">
+    <button type="button" onclick="myFunction()" class="dropbtn"></button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="order.html">ORDER</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="hearse">
+        <div class="order-form">
+            <div class="order-form-line" style="text-align: right">
+                Subtotal: <input title="Subtotal" id="subtotal" disabled="disabled"/>
+            </div>
+            <br />
+            <div class="order-form-line">
+                <select title="Select a Pizza" id="pizzaType1" onchange="calculateOrderValue()">
+                    <option value="0">Select a Pizza</option>
+                    <option value="15">Banizza - S</option>
+                    <option value="20">Banizza - M</option>
+                    <option value="25">Banizza - L</option>
+                    <option value="13">Beanizza - S</option>
+                    <option value="17">Beanizza - M</option>
+                    <option value="22">Beanizza - L</option>
+                    <option value="15">Eggizza - S</option>
+                    <option value="18">Eggizza - M</option>
+                    <option value="20">Eggizza - L</option>
+                    <option value="10">Corndogizza - S</option>
+                    <option value="12">Corndogizza - M</option>
+                    <option value="15">Corndogizza - L</option>
+                    <option value="20">The Hot Mess - S</option>
+                    <option value="30">The Hot Mess - M</option>
+                    <option value="40">The Hot Mess - L</option>
+                    <option value="20">Spaghizza - S</option>
+                    <option value="25">Spaghizza - M</option>
+                    <option value="30">Spaghizza - L</option>
+                </select>
+
+                <input title="Pizza Quantity" id="pizzaQuantity1" onchange="validateNumber(this);calculateOrderValue()"/>
+            </div>
+            <div class="order-form-line">
+                <select title="Select a Pizza" id="pizzaType2" onchange="calculateOrderValue()">
+                    <option value="0">Select a Pizza</option>
+                    <option value="15">Banizza - S</option>
+                    <option value="20">Banizza - M</option>
+                    <option value="25">Banizza - L</option>
+                    <option value="13">Beanizza - S</option>
+                    <option value="17">Beanizza - M</option>
+                    <option value="22">Beanizza - L</option>
+                    <option value="15">Eggizza - S</option>
+                    <option value="18">Eggizza - M</option>
+                    <option value="20">Eggizza - L</option>
+                    <option value="10">Corndogizza - S</option>
+                    <option value="12">Corndogizza - M</option>
+                    <option value="15">Corndogizza - L</option>
+                    <option value="20">The Hot Mess - S</option>
+                    <option value="30">The Hot Mess - M</option>
+                    <option value="40">The Hot Mess - L</option>
+                    <option value="20">Spaghizza - S</option>
+                    <option value="25">Spaghizza - M</option>
+                    <option value="30">Spaghizza - L</option>
+                </select>
+
+                <input title="Pizza Quantity" id="pizzaQuantity2" onchange="validateNumber(this);calculateOrderValue()"/>
+            </div>
+            <div class="order-form-line">
+                <select title="Select a Pizza" id="pizzaType3" onchange="calculateOrderValue()">
+                    <option value="0">Select a Pizza</option>
+                    <option value="15">Banizza - S</option>
+                    <option value="20">Banizza - M</option>
+                    <option value="25">Banizza - L</option>
+                    <option value="13">Beanizza - S</option>
+                    <option value="17">Beanizza - M</option>
+                    <option value="22">Beanizza - L</option>
+                    <option value="15">Eggizza - S</option>
+                    <option value="18">Eggizza - M</option>
+                    <option value="20">Eggizza - L</option>
+                    <option value="10">Corndogizza - S</option>
+                    <option value="12">Corndogizza - M</option>
+                    <option value="15">Corndogizza - L</option>
+                    <option value="20">The Hot Mess - S</option>
+                    <option value="30">The Hot Mess - M</option>
+                    <option value="40">The Hot Mess - L</option>
+                    <option value="20">Spaghizza - S</option>
+                    <option value="25">Spaghizza - M</option>
+                    <option value="30">Spaghizza - L</option>
+                </select>
+
+                <input title="Pizza Quantity" id="pizzaQuantity3" onchange="validateNumber(this);calculateOrderValue()" pattern="[0-9.]+" />
+            </div>
+            <br />
+            <div class="order-form-line" style="text-align: right">
+                <button id="order-button" onclick="calculateTotal()">Calculate Total</button>
+            </div>
+            <br />
+            <div class="order-form-line" style="text-align: right">
+                Total: <input title="Total" id="total" disabled="disabled"/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

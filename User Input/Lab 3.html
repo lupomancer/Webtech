@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3</title>
+</head>
+<body>
+<img id="theImage" src="https://i1.sndcdn.com/avatars-000337162454-pu6i7o-large.jpg" style="height:600px;">
+<p><input type="button" id="theButton" value="click me!" onload="pictureChange()"></p>
+<script>
+    var var1 = "variable 1";
+    var var2 = "variable 2";
+    var varc = var1 + var2;
+    alert(varc);
+    var BoB = "bottles of beer on the wall";
+    var i;
+    for (i = 1; i < 100; i++)
+    {
+        console.log(i + BoB);
+    }
+    var city = prompt("Enter a city. (Make sure it's Powell River)");
+    var month = prompt("Enter a month. (Don't pick August)");
+    if(city == "Powell River") {
+        if (month == "January") {
+            document.write("The average high temperature for January in Powell River 6C");
+        }
+        else if (month == "February") {
+            document.write("The average high temperature for February in Powell River 7C");
+        }
+        else if (month == "March") {
+            document.write("The average high temperature for March in Powell River 10C");
+        }
+        else if (month == "April") {
+            document.write("The average high temperature for April in Powell River 13C");
+        }
+        else if (month == "May") {
+            document.write("The average high temperature for May in Powell River 16C");
+        }
+        else if (month == "June") {
+            document.write("The average high temperature for June in Powell River 20C");
+        }
+        else if (month == "July") {
+            document.write("The average high temperature for July in Powell River 22C");
+        }
+        else if (month == "August") {
+            document.write("Dude I said don't pick August");
+        }
+        else if (month == "September") {
+            document.write("The average high temperature for September in Powell River 19C");
+        }
+        else if (month == "October") {
+            document.write("The average high temperature for October in Powell River 13C");
+        }
+        else if (month == "November") {
+            document.write("The average high temperature for November in Powell River 8C");
+        }
+        else if (month == "December") {
+            document.write("The average high temperature for December in Powell River 6C");
+        }
+    }
+    else {
+        document.write("I don't have weather information for that city. Must have been wiped off the face of the planet.");
+    }
+    function pictureChange()
+    {
+        var num = Math.floor((Math.random() * 4) + 1);
+        if (num == 1) {
+            document.getElementById("theImage").innerHTML = "https://ih1.redbubble.net/avatar.1384860.100x100.jpg";
+        }
+        else if (num == 2) {
+            document.getElementById("theImage").innerHTML = "https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg";
+        }
+        else if (num == 3) {
+            document.getElementById("theImage").innerHTML = "https://res.cloudinary.com/teepublic/image/private/s--tzvoXr7B--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1522076329/production/designs/2531350_0.jpg";
+        }
+        else if (num == 4) {
+            document.getElementById("theImage").innerHTML = "https://i2.wp.com/boingboing.net/wp-content/uploads/2018/03/harold.jpg?fit=525%2C296&ssl=1";
+        }
+    }
+</script>
+</body>
+</html>

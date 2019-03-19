@@ -1,0 +1,182 @@
+/*start main container*/
+.hearse {
+    object-fit: cover;
+    width: 1024px;
+    position: center;
+    margin: 0 auto;
+}
+/*end main container*/
+
+/*start dropdown*/
+.dropbtn {
+    object-fit: scale-down;
+    width: 150px;
+    height: 150px;
+    background: #FD0C91 url(images/slicesfromspacelogo150.png);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #FF5076;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #280229;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #6143D5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+/*end dropdown*/
+
+/*pizza stuff for menu*/
+.pizza {
+    object-fit: cover;
+    float: right;
+    width: 49%;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    color: black;
+    position: relative;
+    border: 1px #6143D5 solid;
+    margin: 5px;
+}
+
+.pizza:hover {
+    background-color: #6143D5;
+    color: #FFFFFF;
+}
+
+.pizza img {
+    float: right;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.pizza-info {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+
+.pizza .price {
+    border-radius: 2px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #6143D5;
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pizza:hover .price {
+    background-color: #280229;
+    color: rgba(244, 66, 176, 0.8);
+}
+/*end pizza stuff for menu*/
+
+.content {
+    margin-top: 10px;
+    background-color: rgba(244, 66, 176, 0.8);
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+body {
+    background: url("images/gridBackground.jpg") fixed right top;
+    background-size: cover;
+    font-family: Arial, monospace;
+}
+
+select {
+    border-color: #6143D5;
+    width: 60%;
+    height: 30px;
+    background-color: #FF5076;
+}
+
+input, textarea {
+    border: 1px solid rgba(244, 66, 176, 0.8);
+    width: 10%;
+    height: 26px;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+textarea {
+    height: 100px;
+    width: 99%;
+}
+
+input#subtotal, input#total {
+    width: 20%;
+    background-color: rgba(244, 66, 176, 0.8);
+    color: black;
+}
+
+label {
+    color: rgba(244, 66, 176, 0.8);
+}
+
+button {
+    width: 20%;
+    background-color: rgba(244, 66, 176, 0.8);
+    color: black;
+    height: 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+button#order-button {
+    margin-right: 140px;
+}
+
+.order-form-line {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.contact-form-line {
+    margin: 15px 5px;
+    font-weight: bold;
+}
+.contact-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.order-form {
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(244, 66, 176, 0.8);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form input {
+    width: 99%;
+}
+

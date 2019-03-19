@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <audio id="accessGranted">
+        <source src="audio/accessGranter.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clapping">
+        <source src="audio/clapping.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="squirt">
+        <source src="audio/squirt.mp3" type="audio/mpeg">
+    </audio>
+
+    <head>
+        <meta charset="utf-8">
+        <tile>layout 1</tile>
+        <style>
+            .bigStyleForBigBoys
+            {
+                color:aqua;
+                font-size:30pt;
+            }
+            #smallerStyleForSmallerBoys
+            {
+                color:red;
+                font-family: monospace;
+                font-size: 50pt;
+            }
+            p
+            {
+              background-color: aquamarine;  
+            }
+            .leftAlign
+            {
+                text-align: left;
+            }
+            .rightAlign
+            {
+                text-align: right;
+            }
+            .centerAlign
+            {
+                text-align: center;
+            }
+            .invisible
+            {
+                display: none;
+            }
+            #fixedLogo
+            {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100px;
+                border: 3px solid #73AD21;
+            }
+            #thisIsABigMess
+            {
+                position: fixed;
+                top: 1000;
+                left: 1000;
+                border: 5px solid #73AD21;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="leftAlign">this is aligned to the left</p>
+        <p class="rightAlign">this is aligned to the right</p>
+        <p class="centerAlign">this is center aligned</p>
+        <p class="invisible">this is invisible</p>
+        <p id="thisIsABigMess">ThIs Is A bIg MeSs</p>
+        <table>
+            <tr>
+                <td width="300" id="fixedLogo"><img src="images/bcit%20logo.png" alt="BCIT logo" style="width:100px;height:100px;" url="https://www.bcit.ca/its/software/"></td>
+                <td class="bigStyleForBigBoys">style test</td>
+                <td id="smallerStyleForSmallerBoys">style 2 test</td>
+            </tr>
+            <tr>
+                <td><img src="images/DumpsterDogsLogoDiscord.png" alt="DDLogo Old" style="width:300px;height:300px;"></td>
+                <td><img src="images/SigLogo.png" alt="DDLogo new" style="width:300px;height:300px;"></td>
+                <td><img src="images/DumpsterDogsLogoDiscord.png" alt="DDLogo Old" style="width:300px;height:300px;"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="images/NATHAN%20FOR%20YOU.png" alt="nathan for you" width="900" height+"900"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img src="images/SigLogo.png" width="250" height="250">
+                    <img src="images/DumpsterDogsLogoDiscord.png" width="250" height="250">
+                </td>
+            </tr>
+        </table>
+        <p>
+            This is the best layout I've ever seen
+        </p>
+    </body>
+        
+        <img src="images/bcit%20logo.png" alt="BCIT logo" style="width:100px;height:100px;">
+        <button type="button" style="float: right;background: url(https://ih1.redbubble.net/avatar.1384860.100x100.jpg);width:300px;height:300px" onclick="playSquirt()">it brings us pleasure</button>
+        <button type="button" style="float: right;background: url(https://i1.sndcdn.com/avatars-000337162454-pu6i7o-large.jpg);width:300px;height:300px" onclick="playClapping()">we like it when you click us</button>
+        <button type="button" style="float: right;background: url(https://i1.sndcdn.com/avatars-000227762489-nib34v-large.jpg);width:300px;height:300px" onclick="playAccess()">yes... click us</button>
+    <script>
+        var access = document.getElementById("accessGranted"); 
+
+        function playAccess()
+        {
+            access.play();
+        }
+        var clapping = document.getElementById("clapping");
+        
+        function playClapping()
+        {
+            clapping.play();
+        }
+        var squirt = document.getElementById("squirt");
+        
+        function playSquirt()
+        {
+            squirt.play();
+        }
+    </script>
+</html>

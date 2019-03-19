@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us!</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <script src="resources/script.js"></script>
+</head>
+<body>
+<div class="dropdown">
+    <button type="button" onclick="myFunction()" class="dropbtn"></button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="order.html">ORDER</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="hearse">
+        <div class="content">
+            <div class="contact-form">
+                <form onsubmit="if(!validateContactForm()) event.preventDefault();">
+                    <div class="contact-form-line">
+                        <label>Name</label><br />
+                        <input title="Name" id="name"/>
+                    </div>
+                    <div class="contact-form-line">
+                        <label>E-mail</label><br />
+                        <input title="E-mail" id="email" />
+                    </div>
+                    <div class="contact-form-line">
+                        <label>Feedback</label><br />
+                        <textarea title="feedback" id="feedback"></textarea>
+                    </div>
+                    <div class="contact-form-line" style="text-align: right">
+                        <button id="contact-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
